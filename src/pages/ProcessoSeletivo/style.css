@@ -1,0 +1,93 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.body{
+    height: 100vh; 
+    width: 100%;
+    
+}
+
+.conteudo-superior{
+    height: 100%;
+    
+}
+
+.imagem-fundo{
+    background: rgb(17,56,92) /*url('sala.jpg')*/; 
+    height: 99%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end; 
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.filtro{
+    background-color: rgba(17,56,92, 0.5);
+    height: 100%;
+}
+
+.separacao{
+    background-color: rgb(239,123,23);
+    height: 1%;
+}
+
+.formatacao-texto{
+    color: white;
+    font-size: 16px;
+    
+}
+
+.texto{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.texto h2{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.texto span {
+    display: inline-block;
+    text-align: center;
+    width: 50%;    
+}
+
+div.seta{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.seta .icone-seta{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    
+}
+
+.seta .fundo-seta{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.seta .fundo-seta:hover{
+    background-color: rgb(239,123,23);
+    border-radius: 20px;
+}
+
+.seta svg{
+    margin-top: 5px;
+}
+
+
+
+
+
