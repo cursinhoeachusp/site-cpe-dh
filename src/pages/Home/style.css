@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap');
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin-top: 3vh;
+  width: 100%;
+  height: 97vh;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+
+.background {
+  width: 100vw;
+  display: grid;
+  box-shadow: 0 10px 20px 1px #788;
+}
+
+.background-img {
+  background: url("../../assets/background-img-2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.slide {
+  border-top: solid 15px darkorange;
+  display: flex;
+  align-self: flex-end;
+  background-color: #14385C;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+}
+
+.slide svg {
+  width: 3em;
+}
+
+.items {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  text-align: justify;
+  justify-content: center;
+  background: url("../../assets/varios-triangulos.png") no-repeat;
+  background-size: initial;
+  background-position: bottom;
+}
+
+.items>div {
+  flex: 1 1 450px;
+  padding: 20px 60px;
+  color: #555;
+}
+
+.items div:first-child {
+  border-right: solid 5px darkorange;
+}
+
+.items>div:nth-last-child(1) {
+  max-width: 400px;
+  text-align: center;
+}
+
+.items>div h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #14385C;
+}
+
+.items svg {
+  fill: darkorange;
+}
+
+@media (max-width: 800px) {
+  .items div:first-child {
+    border: none;
+  }
+}
