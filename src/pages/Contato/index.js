@@ -17,7 +17,7 @@ export default function Contato() {
           <form className="formularioDeContato">
             <div>
               <label> 
-                <p className="itemDoForm">Nome:</p>
+                <p className="itemDoForm" id="nome">Nome:</p>
                 <input type="text" name="name" className="caixaDoForm"/>
               </label>
             </div>
@@ -37,11 +37,11 @@ export default function Contato() {
               <label> 
                 <p className="itemDoForm">Mensagem:</p>
                 {/* <input type="textarea" name="name" className="caixaDoForm"/> */}
-                <textarea class ="caixaDoForm" id="story" name="story" rows="5" cols="33"> It was a dark and stormy night...</textarea>
+                <textarea class ="caixaDoForm" id="formBotaoRedimensionavel" name="story" rows="5" cols="33"> </textarea>
               </label>
             </div>
 
-            <input type="submit" value="Enviar" className="botaoSubmit"/>
+            <input type="submit" value="Enviar" className="botaoEnviarContato"/>
           </form>
         </div> {/* fim da form */}
         <div className="contatoBlocoImagem">
@@ -49,21 +49,6 @@ export default function Contato() {
         </div>
 
       </div> {/* fim da corpoDaAreaDeContato */}
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-
-
     </div>
   );
 }

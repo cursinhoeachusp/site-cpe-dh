@@ -2,11 +2,11 @@
 .mainContato {
     width: 100vw;
     height: 100vh;
-    background-color: #12385D;
+    background-color: white;
 }
-/*---------------------------------------------------*/
+/*----------------------------------------------------------*/
 
-/*----------------- bloco de texto -----------------*/
+/*--------------------- bloco de texto ---------------------*/
 .textContato {
     width: 100vw;
     height: 20vh;
@@ -20,95 +20,17 @@
     font-weight: bold;
     text-align: center;
 }
-/*---------------------------------------------------*/
-
-/*------------------------------------ Formulário e Imagem -----------------------------------*/
-/* .form {
-    background-color: blue;
-    margin-top: 2vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-} */
-
-/*----------------- Itens do Formulário -----------------*/
-.caixaDoForm {
-    border: none;
-    width: 20vw;
-    height: 4vh;
-    background-color: #f7f7f7;
-}
+/*---------------------------------------------------------*/
 
 
-.botaoSubmit {
-    background-color: #12385D;
-    padding: 5px;
-    border: none;
-    width: 100px;
-    font-weight: bold;
-    color: #f7f7f7;
-    
-}
 
-.itemDoForm {
-    font-weight: bold;
-    color: #12385D;
-}
+/*------------------------------ Media Query pra Desktop -----------------------------------*/
 
-#story {
-    margin-bottom: 10px;
-    max-width: 20vw;
-}
-/*---------------------------------------------------*/
-
-/*----------------- Media Query pra Celular  -----------------*/
-@media only screen and (max-width: 480px) {
-    .corpoDaAreaDeContato {
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 40vh;
-        background-color: coral; 
-        border: solid 3px palevioletred;
-    }    
-
-    .formularioDeContato {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 40vh;
-        padding-right: 5vw;
-    }
-
-    .contatoBlocoImagem {
-        background-color: lawngreen;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .imagemDeContato {
-        display: flex;
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        background-image: url(https://brasilcursinhos.org/wp-content/uploads/2017/04/contato.png);
-        height: 30vh;
-        width: 50vw;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-}
-/*------------------------------------------------------------*/
-
-/*----------------- Media Query pra Desktop  -----------------*/
 @media only screen and (min-width: 1024px) {
     .corpoDaAreaDeContato {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        height: 40vh;
+        height: 50vh;
         background-color: white; 
         /* border: solid 3px palevioletred; */
     }
@@ -119,12 +41,12 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-around;
-        height: 30vh;
+        height: 50vh;
         padding-right: 3vw;
         color: white;
         /* border: solid 3px black; */
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        /* margin-top: 5vh; */
+        /* margin-bottom: 5vh; */
     }
 
     .contatoBlocoImagem {
@@ -140,16 +62,146 @@
         /* flex-direction: column; */
         /* justify-content: center; */
         background-image: url(https://i.imgur.com/ppwlCAJ.png);
-        height: 30vh;
-        width: 15vw;
+        height: 50vh;
+        width: 25vw;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+        /*----------------- Itens do Formulário -----------------*/
+
+    #nome {
+        padding-top: 4px;
+    }
+
+    .itemDoForm {
+        font-weight: bold;
+        color: #12385D;
+        margin-bottom: 5px;
+        font-size: larger;
+    }
+
+    .caixaDoForm {
+        border: none;
+        width: 20vw;
+        height: 4vh;
+        padding-left: 6px;
+        background-color: #f7f7f7;
+        /* border: solid 1px #12385D; */
+    }
+
+    #formBotaoRedimensionavel {
+        /* margin-bottom: 5px; */
+        padding-top: 5px;
+        max-width: 20vw;
+        min-width: 20vw;
+        min-height: 4vh;
+        max-height: 17vh;  
+        /* color: red; */
+        font-weight: bold;
+        /* font-size: larger; */
+    }
+
+    .botaoEnviarContato {
+        background-color: #12385D;
+        padding: 5px;
+        border: none;
+        width: 100px;
+        font-weight: bold;
+        color: #f7f7f7;  
+    }
+    
+
+    
+}
+/*---------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------*/
+
+
+/*----------------- Media Query pra Celular  -----------------*/
+@media only screen and (max-width: 480px) {
+    .corpoDaAreaDeContato {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 50vh;
+        background-color: white; 
+        /* border: solid 3px palevioletred; */
+    }
+   
+
+    .formularioDeContato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 50vh;
+        /* padding-right: 3vw; */
+        color: white;
+        /* border: solid 3px black; */
+        /* margin-top: 5vh; */
+        /* margin-bottom: 5vh; */
+    }
+
+    .contatoBlocoImagem {
+        /* background-color: lawngreen; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagemDeContato {
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        background-image: url(https://i.imgur.com/ppwlCAJ.png);
+        height: 100vh;
+        width: 100vw;
         background-repeat: no-repeat;
         background-size: 100%;
     }
 
+    /*----------------- Itens do Formulário -----------------*/
+
+    #nome {
+        padding-top: 4px;
+    }
+
+    .itemDoForm {
+        font-weight: bold;
+        color: #12385D;
+        margin-bottom: 5px;
+        font-size: larger;
+    }
+
+    .caixaDoForm {
+        border: none;
+        width: 80vw;
+        height: 4vh;
+        padding-left: 6px;
+        background-color: #f7f7f7;
+        /* border: solid 1px #12385D; */
+    }
+
+    #formBotaoRedimensionavel {
+        /* margin-bottom: 5px; */
+        padding-top: 5px;
+        max-width: 80vw;
+        min-width: 80vw;
+        min-height: 4vh;
+        max-height: 17vh;  
+        /* color: red; */
+        font-weight: bold;
+        /* font-size: larger; */
+    }
+
+    .botaoEnviarContato {
+        background-color: #12385D;
+        padding: 5px;
+        border: none;
+        width: 100px;
+        font-weight: bold;
+        color: #f7f7f7;  
+    }   
 }
-/*------------------------------------------------------------*/
-
-
-
-
 /*--------------------------------------------------------------------------------------------*/
