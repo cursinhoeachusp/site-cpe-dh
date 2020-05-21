@@ -1,44 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 *{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
+/*arrumando div containers*/
 .body{
     height: 100vh; 
     width: 100%;
-    
+    transition: all .9s;
 }
 
-.conteudo-superior{
-    height: 100%;
-    
+/*classes genericas*/
+.azul{
+    background: rgb(17,56,92);
 }
 
-.imagem-fundo{
-    background: rgb(17,56,92) /*url('sala.jpg')*/; 
-    height: 99%;
-    box-sizing: border-box;
+.azul-escuro{
+    color: #1B2631;
+}
+
+.laranja{
+    background-color: rgb(239,123,23);;
+}
+
+.flex-row{
     display: flex;
-    align-items: flex-end; 
-    flex-wrap: wrap;
     flex-direction: row;
 }
 
-.filtro{
-    background-color: rgba(17,56,92, 0.5);
-    height: 100%;
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+/*configurando conteudo superior e seus filhos*/
+.conteudo-superior{
+    height: inherit;    
+}
+
+.cor-fundo{
+    height: 99%;
+    box-sizing: border-box;
+    align-items: flex-end; 
+    flex-wrap: wrap;
 }
 
 .separacao{
-    background-color: rgb(239,123,23);
     height: 1%;
 }
 
+/*configurando texto do conteudo superior*/
 .formatacao-texto{
     color: white;
-    font-size: 16px;
-    
+    font-size: 16px;   
 }
 
 .texto{
@@ -58,6 +74,7 @@
     width: 50%;    
 }
 
+/*configurando seta para transição*/
 div.seta{
     width: 100%;
     margin: 0px auto;
@@ -74,8 +91,8 @@ div.seta{
 
 .seta .fundo-seta{
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .seta .fundo-seta:hover{
@@ -84,10 +101,177 @@ div.seta{
 }
 
 .seta svg{
-    margin-top: 5px;
+    margin-top: 11px;
+    transition: all .9s;
+}
+
+/*aplicando a animação no conteudo superior e no principal*/
+.esconder{
+    display: none;
+}
+
+#principal:checked ~ .body{
+    margin-top: -90vh;  
+}
+
+#principal:checked ~ .body svg{
+    transform: rotate(180deg);
+}
+
+/*configurando conteudo principal*/
+.conteudo-principal{
+    height: 100vh;
+}
+
+/*configuarando area do processo seletivo*/
+.inscricoes{
+    padding: 60px 0px;
+    flex-wrap: wrap;
+}
+
+.descricao{
+    width: 100%;
+}
+
+.descricao h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.descricao .barra{
+    align-self: center;
+    width: 270px;
+    height: 5px;
+    margin-top: 16px;
+    border-radius: 10px;
+}
+
+.processos-seletivos{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.processos-seletivos .processo{
+    height: 360px;
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.processo .cabecalho{
+    height: 100px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.processo h6, a{
+    font-weight: 900;
+    color:#D0D3D4;
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.processo a:hover{
+    text-decoration: underline; 
+}
+
+.processo h2{
+    color: #eeeeee;
+    font-weight: 300;
+    margin-bottom: 13px;
+    margin-top: 10px;
+}
+
+.info-prova ul{
+    list-style: none; 
+}
+
+.info-prova li{
+    padding: 12px 10px;
+    background-color: #FAFAFA;
+}
+
+.impar{
+    background-color: #F5F5F5;
+}
+
+.info-prova li.centro{ 
+    justify-content: center;
+}
+
+li.botao button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    color: #F5F5F5;
+    background-color: rgb(17,56,92);
+}
+
+.bordar-redonda{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 
+/*media querie*/
+@media(min-width: 500px){
+    .processos-seletivos{
+        width: 50%
+    }
 
+    .inscricoes{
+        align-items: center;
+    }
 
+    .processos-seletivos .processo{
+        width: 350px;
+        height: 450px;
+    }
+    
+    .processo .cabecalho{
+        height: 120px;
+        padding-top: 20px;
+    }   
 
+}
+
+@media (min-width: 615px){
+    .processo h6, a{
+        font-size: 14px;
+    }
+
+    .processo h2{
+        font-size: 29px
+    }
+
+    li{
+        padding: 14px 12px;
+        font-size: 20px;
+    }
+
+    li.botao button{
+        padding: 13px 23px;
+        border-radius: 25px;
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .processos-seletivos{
+        width: 90%;
+    }
+}
+
+@media (min-width: 2000px){
+    .processos-seletivos{
+        
+        width: 50%;
+    }
+}
