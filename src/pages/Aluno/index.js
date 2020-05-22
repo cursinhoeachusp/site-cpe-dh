@@ -16,11 +16,13 @@ export default function Aluno() {
           Texto bonito sobre como todxs no cursinho são voluntários e qualquer valor na doação ajuda muito na execução das nossas atividades e ajuda a "transformar em realidade o sonho de entrar para a universidade."
         </div>
         <div className="divQuero">
-          <button className="botaoQuero">Quero Contribuir</button>
+          <a href="#queroContribuir">
+            <button className="botaoQuero">Quero Contribuir</button>
+          </a>
         </div>
       </div>
 
-      <div className="precos">
+      <div className="precos" id="queroContribuir">
         <a href="https://www.google.com.br/" target="_blank">
           <div className="d200 doacao">
             R$ 200,00 Mensais

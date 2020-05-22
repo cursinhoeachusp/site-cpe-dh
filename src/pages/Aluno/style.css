@@ -1,5 +1,5 @@
 .tudoApoie {
-    background-color: #12385D;
+    background-color: #14385C;
     width: 100vw;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .tudoApoie .doacoes h1 svg {
-    fill: #FF790C;
+    fill: #FD7C11;
 }
 
 .tudoApoie .doacoes {
@@ -47,11 +47,16 @@
 }
 
 .tudoApoie .botaoQuero {
-    background-color: #FF790C;
+    background-color: #FD7C11;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    text-decoration-color: #12385D;
+    text-decoration-color: #14385C;
+}
+
+.tudoApoie .botaoQuero:hover {
+    cursor: pointer;
+    background-color: rgb(228, 107, 8);
 }
 
 .tudoApoie .precos {
@@ -61,25 +66,26 @@
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: auto auto auto auto auto auto;
-    background-color: #12385D;
+    background-color: #14385C;
     border: none;
 }
 
 .tudoApoie a {
     text-decoration: none;
     font-weight: bold;
-    color: #12385D;
+    color: #14385C;
     font-size: 18px;
-    background-color: rgba(255, 121, 12, 0.8);
+    /* background-color: rgba(255, 121, 12, 0.8); */
+    background-color: #FD7C11;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: #12385D solid 5px;
+    border: #14385C solid 5px;
     border-radius: 20px;
 }
 
 .tudoApoie a:hover {
-    background-color: #FF790C;
+    background-color: rgba(253, 123, 17, 0.8);
 }
 
 @media (min-width: 768px) {
@@ -95,6 +101,13 @@
 }
 
 @media (min-width: 1024px) {
+    .tudoApoie a {
+        background-color: rgba(253, 123, 17, 0.8);
+    }
+
+    .tudoApoie a:hover {
+        background-color: #FD7C11;
+    }
     .tudoApoie .doacao {
         font-size: 30px;
     }
