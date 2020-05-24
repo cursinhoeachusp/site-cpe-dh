@@ -40,6 +40,12 @@
     font-size: 40px;
 }
 
+.poteiro{
+    cursor: pointer;
+}
+
+
+
 /*configurando conteudo superior e seus filhos*/
 .conteudo-superior{
     height: inherit;    
@@ -161,6 +167,8 @@ div.seta{
     width: 250px;
     border-radius: 20px;
     margin-bottom: 25px;
+    /* transition: all .9s; */
+    
 }
 
 .processo .cabecalho{
@@ -172,7 +180,7 @@ div.seta{
     padding-top: 10px;
 }
 
-.processo h6, a{
+.processo h6, .detalhes, .edital{
     font-weight: 900;
     color:#D0D3D4;
     font-family: 'Muli', sans-serif;
@@ -216,6 +224,7 @@ li.botao button{
     font-weight: 700;
     color: #F5F5F5;
     background-color: rgb(17,56,92);
+    outline: none;
 }
 
 .bordar-redonda{
@@ -284,6 +293,14 @@ li.botao button{
     font-size: 16px;
 }
 
+.edital{
+    color: rgb(7, 29, 49);  
+}
+
+.edital:hover{
+    text-decoration: underline;
+}
+
 
 /*media querie*/
 @media(min-width: 500px){
@@ -297,7 +314,7 @@ li.botao button{
 
     .processos-seletivos .processo{
         width: 350px;
-        height: 450px;
+        height: 430px;
     }
     
     .processo .cabecalho{
@@ -332,6 +349,13 @@ li.botao button{
 
     .processos-seletivos{
         width: 90%;
+    }
+
+    .processo:hover{
+        box-shadow: 15px 15px #1B2631;
+        position: relative;
+        top: -5px;
+        transition: top .3s;
     }
 }
 
