@@ -3,27 +3,33 @@ import React from 'react';
 import './style.css';
 
 export default function Header() {
+  const { useState } = React;
+  const [condition, setCondition] = useState(false);
   return (
-<header>
+    <header>
+    <hr class="separador"></hr>
     <nav className="nav-mobile">
-        <figure>
-            <img  className="logo" src="" alt=""></img>
+        <figure onClick={() => setCondition(!condition)}>
+            <img  className="logo" src={require("../../assets/logo-cursinho.png")} alt=""></img>
         </figure>
-        <a href="">
-            <div>
+        <a href="#root" id="root" className="icon" onClick={() => setCondition(!condition)}>
+            <div className={condition ? "menu-hamburguer girar": "menu-hamburguer"}>
                 <hr className="bar1"></hr>
                 <hr className="bar2"></hr>
                 <hr className="bar3"></hr>
             </div>
             <div className="menu-text">
                 <span>
-                    MENU           
+                    MENU
                 </span>
                 <hr></hr>
             </div>
         </a>
     </nav>
-    <nav id="myLinks">
+    <nav className={condition ? "top-nav displayFlex": "top-nav"} id="myLinks">
+        <a href="/"><p>HOME</p>
+        <hr></hr>
+        </a>
         <a href="/about"><p>QUEM SOMOS</p>
         <hr></hr>
         </a>
@@ -34,9 +40,9 @@ export default function Header() {
         <hr></hr>
         </a>
         <figure className="logo-top-nav">
-        <img className="logo" src="" alt=""></img>
+        <img className="logo" src={require("../../assets/logo-cursinho.png")} alt=""></img>
         </figure>
-        <a href="/apoie"><p>APOIE</p>
+        <a href="apoie"><p>APOIE</p>
         <hr></hr>
         </a>
         <a href="/faca-parte"><p>FAÇA PARTE</p>
