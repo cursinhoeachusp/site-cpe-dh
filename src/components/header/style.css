@@ -32,7 +32,7 @@ hr.separador{
 }
 
 .nav-mobile{
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
 }
@@ -106,7 +106,7 @@ hr.separador{
 
 
 .top-nav{
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -156,4 +156,54 @@ hr.separador{
 
 figure{
     margin: 0;  
+}
+
+.displayFlex{
+    display: flex;
+}
+
+@media (min-width: 200px) and (max-width: 450px){
+
+    header{
+        margin-top: 10px;
+    }
+
+    .nav-mobile{
+        display: flex;
+    }
+
+    .top-nav{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    figure{
+        margin: 16px 20px;
+    }
+
+    .top-nav>a>p{
+        width: fit-content;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 850px){
+
+    .top-nav{
+        margin: 0;
+    }
+    .top-nav a {
+        font-size: 0.9em;
+    }
+    .top-nav figure{
+        display: block;
+        order: -1;
+    }
+}
+
+@media (min-width: 851px) {
+
+    .top-nav figure{
+        display: block;
+        order: 0;
+    }
 }
