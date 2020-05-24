@@ -1,14 +1,14 @@
 import React from 'react';
 
 import './style.css';
-
+import './script.js';
 
 export default function ProcessoSeletivo() {
   return (
     <div className="html">
       <input type="checkbox" name="grupo" id="principal" className="esconder" />
 
-      <div className="body" id="body">
+      <div className="body" id="body" data-escondido="false">
 
         <div className="conteudo-superior">
             

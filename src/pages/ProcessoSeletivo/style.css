@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 *{
     font-family: 'Open Sans', sans-serif;
@@ -11,7 +12,6 @@
     width: 100%;
     transition: all .9s;
 }
-
 /*classes genericas*/
 .azul{
     background: rgb(17,56,92);
@@ -115,8 +115,12 @@ div.seta{
     display: none;
 }
 
-#principal:checked ~ .body{
+#principal:checked ~ .body {
     margin-top: -90vh;  
+}
+
+.mudar{
+   border: 50px solid rgb(7, 29, 49);
 }
 
 #principal:checked ~ .body .icone-seta{
