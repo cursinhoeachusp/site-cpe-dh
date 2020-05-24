@@ -7,8 +7,9 @@ export default function Header() {
   const [condition, setCondition] = useState(false);
   return (
     <header>
-    <nav className="nav-mobile" onClick={() => setCondition(!condition)}>
-        <figure>
+    <hr class="separador"></hr>
+    <nav className="nav-mobile">
+        <figure onClick={() => setCondition(!condition)}>
             <img  className="logo" src={require("../../assets/logo-cursinho.png")} alt=""></img>
         </figure>
         <a href="#root" id="root" className="icon" onClick={() => setCondition(!condition)}>
@@ -18,14 +19,17 @@ export default function Header() {
                 <hr className="bar3"></hr>
             </div>
             <div className="menu-text">
-                <span>MENU
-                
+                <span>
+                    MENU
                 </span>
                 <hr></hr>
             </div>
         </a>
     </nav>
     <nav className={condition ? "top-nav displayFlex": "top-nav"} id="myLinks">
+        <a href="/"><p>HOME</p>
+        <hr></hr>
+        </a>
         <a href="/about"><p>QUEM SOMOS</p>
         <hr></hr>
         </a>
