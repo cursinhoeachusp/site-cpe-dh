@@ -1,22 +1,8 @@
 footer {
     background-color: #12385D;
     display: flex;
-    justify-content: flex-end;
-}
-
-.logoinsta {
-    width: 22px;
-    height: 22px;
-}
-
-.logoface {
-    width: 22px;
-    height: 22px;
-}
-
-.logoemail {
-    width: 22px;
-    height: 20px;
+    margin-top: 5em;
+    justify-content: space-between;
 }
 
 .insta {
@@ -35,20 +21,19 @@ footer {
 
 .text {
     color: white;
-    margin-bottom: 5px;
-}
-
-.text {
     list-style: none;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
     text-align: end;
+    margin-right: 1em;
+
 }
 
 .icons {
     list-style: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     vertical-align: middle;
+    margin-left: 1em;
 }
 
 .titulo {
@@ -68,8 +53,6 @@ footer {
 }
 
 .coruja {
-    /* background: url("coruja.png") no-repeat; */
-    background-size: contain;
     justify-content: end;
     width: 100px;
     height: 100px;
@@ -88,9 +71,7 @@ footer {
     width: 100%;
 }
 
-.container-img {
-    justify-content: end;
-}
+
 
 @media (max-width: 500px) {
     footer {
@@ -105,8 +86,10 @@ footer {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin: 2em 0;
     }
     .icons {
+        margin-bottom: 2em;
         margin-right: 30px;
     }
 }
@@ -128,8 +111,3 @@ footer {
         flex-direction: column;
     }
 }
-
-
-/* footer {
-    margin-top: auto;
-} */
