@@ -7,9 +7,9 @@ export default function Footer() {
     return (
 
         <footer>
-            <div className="centro">
+            <div className="footerCentro">
                 <div>
-                    <ul className="text">
+                    <ul className="footerText">
                         <li className="titulo">
                             Cursinho Popular EACH-USP
                     </li>

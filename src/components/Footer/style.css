@@ -19,7 +19,7 @@ footer {
     color: white;
 }
 
-.text {
+.footerText {
     color: white;
     list-style: none;
     font-size: medium;
@@ -27,6 +27,10 @@ footer {
     text-align: end;
     margin-right: 1em;
 
+}
+
+footer li{
+    padding: 5px;
 }
 
 .icons {
@@ -54,16 +58,18 @@ footer {
 
 .coruja {
     justify-content: end;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     margin: 5px 5px;
 }
 
 .icons svg {
     vertical-align: middle;
+    margin-right: 4px;
+    /* background-color: red; */
 }
 
-.centro {
+.footerCentro {
     display: flex;
     align-self: center;
     justify-content: center;
@@ -80,7 +86,7 @@ footer {
         align-items: center;
         flex-direction: column;
     }
-    .text {
+    .footerText {
         text-align: center;
         text-align: center;
         justify-content: center;
@@ -101,7 +107,7 @@ footer {
         align-items: center;
         flex-direction: column;
     }
-    .text {
+    .footerText {
         text-align: center;
     }
     .icons {
