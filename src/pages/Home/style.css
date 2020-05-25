@@ -14,7 +14,6 @@ html {
 .container {
   margin-top: 3vh;
   width: 100%;
-  height: 97vh;
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
@@ -48,7 +47,7 @@ html {
   width: 3em;
 }
 
-.items {
+.container .items {
   margin-top: 2em;
   display: flex;
   flex-wrap: wrap;
@@ -60,33 +59,36 @@ html {
   background-position: bottom;
 }
 
-.items>div {
+.container .items>div {
   flex: 1 1 450px;
   padding: 20px 60px;
-  color: #555;
 }
 
-.items div:first-child {
+.container .items div:first-child {
   border-right: solid 5px darkorange;
 }
 
-.items>div:nth-last-child(1) {
+.container .items>div:nth-last-child(1) {
   max-width: 400px;
   text-align: center;
 }
 
-.items>div h2 {
+.container .items>div h2 {
   text-align: center;
   margin-bottom: 1em;
   color: #14385C;
 }
 
-.items svg {
+.container .items svg {
   fill: darkorange;
 }
 
+.container .items .texto {
+  color: #555;
+}
+
 @media (max-width: 800px) {
-  .items div:first-child {
+  .container .items div:first-child {
     border: none;
   }
 }
