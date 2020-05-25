@@ -6,7 +6,7 @@ import Header from './components/header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import Aluno from './pages/Aluno';
+import Apoie from './pages/Apoie';
 import Contato from './pages/Contato';
 import FacaParte from './pages/FacaParte';
 import Noticias from './pages/Noticias';
@@ -19,7 +19,7 @@ export default function Routes() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/aluno" component={Aluno} />
+        <Route path="/apoie" component={Apoie} />
         <Route path="/contato" component={Contato} />
         <Route path="/faca-parte" component={FacaParte} />
         <Route path="/noticias" component={Noticias} />
