@@ -1,0 +1,45 @@
+.tudo {
+    background-color: #12385D;
+    height: 100vh;
+}
+
+.primeiraTela {
+    height: 100vh;
+    background-image: url("Triângulos.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /* opacity: 0.5; */
+    /* transform: rotate(180deg); */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.doacoes {
+    display: flex;
+    justify-content: center;
+}
+
+.texto {
+    color: white;
+    margin: 0px 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.divQuero {
+    display: flex;
+    justify-content: center;
+}
+
+.botaoQuero {
+    background-color: #FF790C;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5% 2%;
+    text-decoration-color: #12385D;
+    
+}
