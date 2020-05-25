@@ -42,7 +42,7 @@ export default function Header() {
         <figure className="logo-top-nav">
         <img className="logo" src={require("../../assets/logo-cursinho.png")} alt=""></img>
         </figure>
-        <a href="apoie"><p>APOIE</p>
+        <a href="/apoie"><p>APOIE</p>
         <hr></hr>
         </a>
         <a href="/faca-parte"><p>FAÇA PARTE</p>

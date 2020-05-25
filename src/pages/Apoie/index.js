@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css';
 
-export default function Aluno() {
+export default function Apoie() {
   return (
     <div className="tudoApoie">
 
