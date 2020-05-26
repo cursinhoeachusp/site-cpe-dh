@@ -23,6 +23,8 @@ html {
   width: 100vw;
   display: grid;
   box-shadow: 0 10px 20px 1px #788;
+  transition: 0.5s;
+
 }
 
 .container .background-img {
@@ -97,5 +99,15 @@ html {
   .container .background-img {
     transition: 2s;
     height: 200px;
+  }
+
+  .container .slide {
+    height: 60px;
+    border-top: solid 10px darkorange;
+
+  }
+
+  .container .slide svg {
+    width: 2em;
   }
 }
