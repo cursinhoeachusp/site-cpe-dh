@@ -63,7 +63,7 @@
 .tudoApoie .precos {
     width: 100vw;
     height: 500px;
-    /* padding: 10px 0px; */
+    padding-top: 10px;
     
     display: grid;
     grid-template-columns: 100vw;
