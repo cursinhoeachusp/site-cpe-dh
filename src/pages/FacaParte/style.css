@@ -1,15 +1,74 @@
 /*----------------- configuração da página -----------------*/
-.mainContato {
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
+.mainFaçaParte {
+    /* width: 100vw; */
+    /* height: 180vh; */
+    /* border: solid 3px red; */
 }
 /*----------------------------------------------------------*/
+
+
+/*------------------------------ departamentos Desktop -----------------------------------*/
+
+@media only screen and (min-width: 1024px) {
+    .departamentos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #12385D;
+    }
+    
+    
+    .departamentos img {
+        height: 225px;
+        width: 300px;
+        display: flex;
+    }
+    
+    .departamento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: red; */
+        padding: 70px;
+        width: 30vw;
+        text-align: center;
+    }
+    
+    .departamentos h3 {
+        text-align: center;
+    }
+    
+    .departamento-baixo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: red; */
+        padding: 70px;
+        margin-top: -100px;
+        width: 30vw;
+        text-align: center;
+    }
+    
+    .textoDepartamentos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+        background-color: #12385D;
+        color: white;
+    }
+
+}
+/*---------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------*/
 
 /*--------------------- bloco de texto ---------------------*/
 .textContato {
     width: 100vw;
-    height: 20vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,19 +81,85 @@
 }
 /*---------------------------------------------------------*/
 
+/*------------------------------ departamentos Celular -----------------------------------*/
+
+@media only screen and (max-width: 480px) {
+    .textoDepartamentos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 20vh;
+        background-color: #12385D;
+        color: white;
+        margin-bottom: 30px;
+    }
+    
+    .departamentos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        height: 410vh;
+        color: #12385D;
+    }
+    
+    .departamentos img {
+        height: 225px;
+        width: 300px;
+        display: flex;
+    }
+    
+    .departamento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: red; */
+        /* padding: 70px; */
+        width: 100vw;
+        height: 65vh;
+        text-align: center;
+    }
+    
+    .departamento-baixo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: red; */
+        /* padding: 70px; */
+        width: 100vw;
+        height: 65vh;
+        text-align: center;
+    }
+
+    .departamentos h3 {
+        text-align: center;
+    }
+
+}
+/*---------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
 /*--------------------------- Independentes de Media Query --------------------------------*/
 
 .corpoDaAreaDeContato {
     display: grid;
     background-color: white; 
-    height: 50vh;
 }
 
 .formularioDeContato {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 50vh;
     padding-right: 3vw;
     color: white;
     /* border: solid 3px black; */
@@ -110,11 +235,13 @@
 @media only screen and (min-width: 1024px) {
     .corpoDaAreaDeContato {
         grid-template-columns: 1fr 1fr;
+        height: 40vh;
     }
    
 
     .formularioDeContato {
         align-items: flex-end;
+        height: 50vh;
         padding-right: 3vw;
     }
 
@@ -152,10 +279,12 @@
     
     .corpoDaAreaDeContato {
         grid-template-columns: 1fr;
+        height: 75vh;
     }
    
 
     .formularioDeContato {
+        height: 30vh;
         align-items: center;
     }
 
@@ -166,8 +295,10 @@
     .imagemDeFaçaParte {
         /* flex-direction: column; */
         /* justify-content: center; */
-        height: 100vh;
+        height: 60vh;
         width: 100vw;
+        margin: auto;
+        /* border: solid 3px red; */
     }
 
     /*----------------- Itens do Formulário -----------------*/
