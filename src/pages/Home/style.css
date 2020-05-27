@@ -46,7 +46,8 @@ html {
 }
 
 .container .slide svg {
-  width: 3em;
+  width: 3em; 
+  /* trocar para pixel / % */
 }
 
 .container .items {
