@@ -17,6 +17,7 @@ html {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
+  margin-bottom: 5em;
 }
 
 .container .background {

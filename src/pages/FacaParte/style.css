@@ -154,6 +154,7 @@
 .corpoDaAreaDeContato {
     display: grid;
     background-color: white; 
+    margin-bottom: 5em;
 }
 
 .formularioDeContato {
