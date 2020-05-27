@@ -1,0 +1,112 @@
+.container-size{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.container-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px 60px 0px;
+    width: 80vw;
+}
+
+.container-content-tittle{
+    display: flex;
+    padding: 25px 0px; 
+}
+
+.container-size h1{
+    color: white;
+    font-size: 4.5vw;
+    width: 80vw;
+    height: auto;
+}
+
+.container-size h2{
+    color: white;
+    margin-bottom: 30px;
+    width: 80vw;
+}
+
+.container-size p{
+    color: white;
+    font-stretch: expanded;
+    margin: 30px 0px 0px 0px;
+    line-height: 1.5;
+    width: 75vw;
+}
+
+.info-1{
+    background-color: #fe8100;
+    background-image: url(../../assets/cool-girl.gif);
+    width: 100%;
+    height: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+}
+
+.info-2{
+    background-color: #f07d00;
+    padding: 10px 0px;
+}
+
+.info-3{
+    background-color: #f39200;
+    padding: 10px 0px;
+}
+
+.info-4{
+    background-color: #f7a700;
+    padding: 10px 0px;
+}
+
+.info-5{
+    background-color: #ffcc00;
+    padding: 10px 0px; 
+}
+
+.info-6{
+    background-color:#ff9b59;
+}
+
+.info-7{
+    background-color:#ff822f;
+}
+
+.info-8{
+    background-color: #ff6f0f;
+}
+
+@media (max-width: 450px){
+    .container-content{
+        padding: 10px 0px 20px 0px;
+    }
+    .container-size h1{
+        font-size: 5.5vw;
+        width: 90vw;
+    }
+    .container-size h2{
+        font-size: 4vw;
+    }
+    .container-size p{
+        font-size: 3vw;
+    }
+    .info-1{
+        background-size: 25vh;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 850px){
+
+}
+
+@media (min-width: 851px) {
+    .container-size p{
+        width: 65vw;
+    }
+}
