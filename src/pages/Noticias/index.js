@@ -18,29 +18,31 @@ export default class Noticias extends Component {
       <main>
         <section className="slider-noticias">
           <Carousel
-            autoPlay={3000}
+            autoPlay={7000}
             animationSpeed={1500}
             infinite
           >
             <div>
-              <img src={carouselImgUm} alt="" />
-              <div className="titulo">Cursinho Popular EACH - USP</div>
+              <a href="https://www.facebook.com/CursinhoPopularEACH/posts/1662323463908740" target="blank"><img src={carouselImgUm} alt="" /></a>
+
             </div>
             <div>
-              <img src={carouselImgDois} alt="" />
-              <div className="titulo">Cursinho Popular EACH - USP 2</div>
+              <a href="https://www.facebook.com/CursinhoPopularEACH/posts/1662323463908740" target="blank"><img src={carouselImgDois} alt="" /></a>
+
+
             </div>
             <div>
-              <img src={carouselImgTres} alt="" />
-              <div className="titulo">Cursinho Popular EACH - USP 3</div>
+              <a href="https://www.facebook.com/CursinhoPopularEACH/posts/1662323463908740" target="blank"><img src={carouselImgTres} alt="" /></a>
+
+
             </div>
             <div>
-              <img src={carouselImgQuatro} alt="" />
-              <div className="titulo">Cursinho Popular EACH - USP 3</div>
+              <a href="https://www.facebook.com/CursinhoPopularEACH/posts/1662323463908740" target="blank"><img src={carouselImgQuatro} alt="" /></a>
+
             </div>
             <div>
-              <img src={carouselImgCinco} alt="" />
-              <div className="titulo">Cursinho Popular EACH - USP 3</div>
+              <a href="https://www.facebook.com/CursinhoPopularEACH/posts/1662323463908740" target="blank"> <img src={carouselImgCinco} alt="" /></a>
+
             </div>
           </Carousel>
         </section>
@@ -52,14 +54,14 @@ export default class Noticias extends Component {
           </div>
             <div className="texto-postagem">
               Parabéns aprovados! <br />
-            Em 2020, mais sonhos se tornaram realidade! Temos orgulho em apresentar nossos alunos e alunas da turma de 2019 aprovades no ensino superior.
+            Em 2020, mais sonhos se tornaram realidade! Temos orgulho em apresentar
             <span id="dots">...</span>
               <span id="more">
                 Em meio ao contexto em que estamos vivendo, temos na educação nosso ponto de esperança e incentivo. Compartilhar essas aprovações nos dá ainda mais forças para não parar e ter a certeza de continuar lutando pelo nosso propósito: um ensino superior acessível e democrático.
                 Agradecemos a todes estudantes que confiaram no nosso trabalho em 2019. O Cursinho Popular EACH - USP deseja uma excelente jornada para as novas e novos universitários, com caminhos únicos e cheios de aprendizados. E lembrem-se: contem conosco para tudo, sempre serão os filhotes da Atena!
             </span>
             </div>
-            <button className="btnLeia">Leia mais</button>
+            <a href="https://www.facebook.com/CursinhoPopularEACH/photos/a.617012431773187/1668656119942141/?type=3&theater" target="blank" className="btnLeia">Leia mais</a>
           </div>
           <div className="postagem">
             <img src={postDois} alt="imagem da postagem" />
@@ -75,7 +77,7 @@ export default class Noticias extends Component {
                 Você pode ajudar a transformar em realidade o sonho de entrar na universidade! Preencha nosso forms para doar: http://bit.ly/
             </span>
             </div>
-            <button className="btnLeia">Leia mais</button>
+            <a href="https://www.facebook.com/CursinhoPopularEACH/photos/a.617012431773187/1668656119942141/?type=3&theater" target="blank" className="btnLeia">Leia mais</a>
           </div>
           <div className="postagem">
             <img src={postUm} alt="imagem da postagem" />
@@ -84,14 +86,14 @@ export default class Noticias extends Component {
           </div>
             <div className="texto-postagem">
               Parabéns aprovados! <br />
-            Em 2020, mais sonhos se tornaram realidade! Temos orgulho em apresentar nossos alunos e alunas da turma de 2019 aprovades no ensino superior.
+            Em 2020, mais sonhos se tornaram realidade! Temos orgulho em apresentar
             <span id="dots">...</span>
               <span id="more">
                 Em meio ao contexto em que estamos vivendo, temos na educação nosso ponto de esperança e incentivo. Compartilhar essas aprovações nos dá ainda mais forças para não parar e ter a certeza de continuar lutando pelo nosso propósito: um ensino superior acessível e democrático.
                 Agradecemos a todes estudantes que confiaram no nosso trabalho em 2019. O Cursinho Popular EACH - USP deseja uma excelente jornada para as novas e novos universitários, com caminhos únicos e cheios de aprendizados. E lembrem-se: contem conosco para tudo, sempre serão os filhotes da Atena!
             </span>
             </div>
-            <button className="btnLeia">Leia mais</button>
+            <a href="https://www.facebook.com/CursinhoPopularEACH/photos/a.617012431773187/1668656119942141/?type=3&theater" target="blank" className="btnLeia">Leia mais</a>
           </div>
         </section>
       </main>
