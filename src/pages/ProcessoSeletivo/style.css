@@ -8,7 +8,6 @@
 
 /*arrumando div containers*/
 .body{
-    /* height: 100vh;  */
     width: 100%;
     transition: all .9s;
 }
@@ -48,7 +47,8 @@
 
 /*configurando conteudo superior e seus filhos*/
 .conteudo-superior{
-    height: inherit;    
+
+    height: 100vh;    
 }
 
 .cor-fundo{
