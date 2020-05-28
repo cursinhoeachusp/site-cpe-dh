@@ -64,7 +64,7 @@
     width: 100vw;
     height: 500px;
     padding-top: 10px;
-    
+    padding-bottom: 5em;
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: auto auto auto auto auto auto;
