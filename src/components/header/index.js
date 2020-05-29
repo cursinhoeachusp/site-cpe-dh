@@ -9,9 +9,11 @@ export default function Header() {
     <header>
     <hr className="separador"></hr>
     <nav className="nav-mobile">
-        <figure onClick={() => setCondition(!condition)}>
-            <img  className="logo" src={require("../../assets/logo-cursinho.png")} alt=""></img>
-        </figure>
+        <a href="/">
+            <figure onClick={() => setCondition(!condition)}>
+                <img  className="logo" src={require("../../assets/logo-cursinho.png")} alt=""></img>
+            </figure>
+        </a>
         <a href="#root" id="root" className="icon" onClick={() => setCondition(!condition)}>
             <div className={condition ? "menu-hamburguer girar": "menu-hamburguer"}>
                 <hr className="bar1"></hr>
@@ -36,9 +38,11 @@ export default function Header() {
         <a href="/noticias"><p>NOTÍCIAS</p> 
         <hr className="extend"></hr>
         </a>
-        <figure className="logo-top-nav">
-        <img className="logo" src={require("../../assets/logo-cursinho.png")} alt=""></img>
-        </figure>
+        <a href="/">
+            <figure className="logo-top-nav">
+            <img className="logo" src={require("../../assets/logo-cursinho.png")} alt=""></img>
+            </figure>
+        </a>
         <div href="#myLinks" className="container-dropdown" onClick={() => setCondition1(!opendropdown)}>
             <a href="#myLinks">
             <p>PROCESSO SELETIVOS</p>
@@ -51,7 +55,7 @@ export default function Header() {
                 </a>
                 <hr></hr>
                 <a href="/faca-parte">
-                    <p>Trabalhe Conosco</p>
+                    <p>Faça Parte</p>
                 </a>
                 <hr></hr>
             </div>
