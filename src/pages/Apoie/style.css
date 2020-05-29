@@ -1,0 +1,119 @@
+.tudoApoie {
+    background-color: #14385C;
+    width: 100vw;
+}
+
+.tudoApoie .primeiraTela {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20px;
+    background-image: url("../../assets/Triangulos@2xTransparente.png");
+    background-repeat: no-repeat;
+    background-position: 10% 80%;
+}
+
+.tudoApoie .doacoes h1 {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.tudoApoie .doacoes h1 svg {
+    fill: #FD7C11;
+}
+
+.tudoApoie .doacoes {
+    display: flex;
+    justify-content: center;
+}
+
+.tudoApoie .texto {
+    color: white;
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.tudoApoie .divQuero {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.tudoApoie .botaoQuero {
+    background-color: #FD7C11;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration-color: #14385C;
+}
+
+.tudoApoie .botaoQuero:hover {
+    cursor: pointer;
+    background-color: rgb(228, 107, 8);
+}
+
+.tudoApoie .precos {
+    width: 100vw;
+    height: 500px;
+    padding-top: 10px;
+    padding-bottom: 5em;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto auto auto auto auto;
+    background-color: #14385C;
+    border: none;
+}
+
+.tudoApoie .precos a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #14385C;
+    font-size: 18px;
+    background-color: #FD7C11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #14385C solid 5px;
+    border-radius: 20px;
+}
+
+.tudoApoie .precos a:hover {
+    background-color: rgba(253, 123, 17, 0.8);
+}
+
+@media (min-width: 768px) {
+    .tudoApoie .precos {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: auto auto auto;
+    }
+
+    .tudoApoie .doacao {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tudoApoie .precos a {
+        background-color: rgba(253, 123, 17, 0.8);
+    }
+
+    .tudoApoie .precos a:hover {
+        background-color: #FD7C11;
+    }
+    .tudoApoie .doacao {
+        font-size: 30px;
+    }
+
+    .tudoApoie .texto {
+        width: 40vw;
+    }
+}

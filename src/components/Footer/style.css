@@ -1,0 +1,118 @@
+footer {
+    background-color: #12385D;
+    display: flex;
+    justify-content: space-between;
+}
+
+.insta {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.face {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.email {
+    color: white;
+}
+
+.footerText {
+    color: white;
+    list-style: none;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: end;
+    margin-right: 1em;
+
+}
+
+footer li{
+    padding: 5px;
+}
+
+.icons {
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+.rua {
+    margin-top: 4px;
+}
+
+.estado {
+    margin-top: 4px;
+}
+
+.cep {
+    margin-top: 4px;
+}
+
+.coruja {
+    justify-content: end;
+    width: 125px;
+    height: 125px;
+    margin: 5px 5px;
+}
+
+.icons svg {
+    vertical-align: middle;
+    margin-right: 4px;
+    /* background-color: red; */
+}
+
+.footerCentro {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+@media (max-width: 500px) {
+    footer {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footerText {
+        text-align: center;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2em 0;
+    }
+    .icons {
+        margin-bottom: 2em;
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+    footer {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footerText {
+        text-align: center;
+    }
+    .icons {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
