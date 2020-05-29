@@ -280,7 +280,7 @@
     
     .corpoDaAreaDeContato {
         grid-template-columns: 1fr;
-        height: 75vh;
+        height: 80vh !important;
     }
    
 

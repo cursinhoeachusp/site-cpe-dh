@@ -1,7 +1,6 @@
 /*----------------- configuração da página -----------------*/
 .mainContato {
     width: 100vw;
-    height: 100vh;
     background-color: white;
 }
 /*----------------------------------------------------------*/
@@ -27,7 +26,7 @@
 .corpoDaAreaDeContato {
     display: grid;
     background-color: white; 
-    height: 50vh;
+    height: 50vh !important;
 }
 
 .formularioDeContato {
@@ -96,6 +95,7 @@
     width: 100px;
     font-weight: bold;
     color: #f7f7f7;  
+    /* margin-bottom: 5px; */
 }
 
 /*-------------------------------------------------------*/
@@ -125,8 +125,8 @@
     .imagemDeContato {
         /* flex-direction: column; */
         /* justify-content: center; */
-        height: 50vh;
-        width: 25vw;
+        height: 66vh;
+        width: 26vw;
     }
 
         /*----------------- Itens do Formulário -----------------*/
@@ -166,8 +166,9 @@
     .imagemDeContato {
         /* flex-direction: column; */
         /* justify-content: center; */
-        height: 100vh;
-        width: 100vw;
+        height: 90vh !important;
+        width: 90vw;
+        margin-top: 30px;
     }
 
     /*----------------- Itens do Formulário -----------------*/
