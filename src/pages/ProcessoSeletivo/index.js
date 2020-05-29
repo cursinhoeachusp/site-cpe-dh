@@ -14,8 +14,11 @@ export default function ProcessoSeletivo() {
             
           <div className="cor-fundo azul flex-row">
             <div className="texto formatacao-texto">
-              <h2>Ja Sonhou em ser o primeiro nos consursos?</h2>
-              <span>Deixe de sonhar e acorde, venha para EACH!! O cursinho popular sem nenhum custo mais desejado de São Paulo, garanta sua vaga já</span>
+              <h2>É estudante de baixa renda? Já se imaginou passando no vestibular?</h2>
+              <span>Saiba que esse sonho não está tão distante, e estamos aqui para te ajudar nessa jornada. Somos um cursinho pré-vestibular
+                    presencial gratuíto para alunos de baixa renda da zona leste de São Paulo. As únicas taxas são as de inscrição, para manutenção do processo
+                    seletivo. A partir disso, sem pagamentos: de materiais, mensalidades, nada. Acompanhe nossos processos seletivos para alunos abaixo:
+              </span>
             </div>
 
             <div className="seta">

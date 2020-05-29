@@ -13,7 +13,10 @@ export default function Apoie() {
           </svg>ÇÕES</h1>
         </div>
         <div className="texto">
-          Texto bonito sobre como todxs no cursinho são voluntários e qualquer valor na doação ajuda muito na execução das nossas atividades e ajuda a "transformar em realidade o sonho de entrar para a universidade."
+          Você acredita no acesso democrático à educação, possibilitando que jovens de áreas periféricas, de colégios públicos e de baixa renda possam ter uma educação superior de qualidade? Nós também.
+          Assim, fazemos o possível para ajudar nossos alunos nessa caminhada, de forma voluntária. Entretanto, ainda temos custos ligados à manutenção das nossoas atividades, como impressão de simulados,
+          projetos pedagógicos, materiais e etc, e é aí que você pode ajudar: seja um doador e nos ajude a continuar
+          transformando a educação!
         </div>
         <div className="divQuero">
           <a href="#queroContribuir">
