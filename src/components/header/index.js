@@ -1,13 +1,13 @@
 import React from 'react';
-
 import './style.css';
 
 export default function Header() {
   const { useState } = React;
   const [condition, setCondition] = useState(false);
+  const [opendropdown, setCondition1] = useState(true);
   return (
     <header>
-    <hr class="separador"></hr>
+    <hr className="separador"></hr>
     <nav className="nav-mobile">
         <figure onClick={() => setCondition(!condition)}>
             <img  className="logo" src={require("../../assets/logo-cursinho.png")} alt=""></img>
@@ -22,34 +22,45 @@ export default function Header() {
                 <span>
                     MENU
                 </span>
-                <hr></hr>
+                <hr className="extend"></hr>
             </div>
         </a>
     </nav>
     <nav className={condition ? "top-nav displayFlex": "top-nav"} id="myLinks">
         <a href="/"><p>HOME</p>
-        <hr></hr>
+        <hr className="extend"></hr>
         </a>
         <a href="/about"><p>QUEM SOMOS</p>
-        <hr></hr>
-        </a>
-        <a href="/processo-seletivo"><p>PROCESSO SELETIVO</p>
-        <hr></hr>
+        <hr className="extend"></hr>
         </a>
         <a href="/noticias"><p>NOTÍCIAS</p> 
-        <hr></hr>
+        <hr className="extend"></hr>
         </a>
         <figure className="logo-top-nav">
         <img className="logo" src={require("../../assets/logo-cursinho.png")} alt=""></img>
         </figure>
+        <div href="#myLinks" className="container-dropdown" onClick={() => setCondition1(!opendropdown)}>
+            <a href="#myLinks">
+            <p>PROCESSO SELETIVOS</p>
+            <hr className="extend"></hr>
+            </a>
+            <div className={opendropdown ? "dropdown": "dropdown displayFlex"}>
+                <hr></hr>
+                <a href="/processo-seletivo">
+                    <p>Alunos</p>
+                </a>
+                <hr></hr>
+                <a href="/faca-parte">
+                    <p>Trabalhe Conosco</p>
+                </a>
+                <hr></hr>
+            </div>
+        </div>
         <a href="apoie"><p>APOIE</p>
-        <hr></hr>
-        </a>
-        <a href="/faca-parte"><p>FAÇA PARTE</p>
-        <hr></hr>
+        <hr className="extend"></hr>
         </a>
         <a href="/contato"><p>CONTATO</p>
-        <hr></hr>
+        <hr className="extend"></hr>
         </a>
     </nav>
     <hr className="separador"></hr>
