@@ -240,6 +240,7 @@ header figure{
         display: block;
         order: -1;
     }
+
 }
 
 @media (min-width: 851px) {
@@ -252,4 +253,5 @@ header figure{
         display: block;
         order: 0;
     }
+
 }

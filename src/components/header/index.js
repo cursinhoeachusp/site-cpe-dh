@@ -45,7 +45,7 @@ export default function Header() {
         </a>
         <div href="#myLinks" className="container-dropdown" onClick={() => setCondition1(!opendropdown)}>
             <a href="#myLinks">
-            <p>PROCESSO SELETIVOS</p>
+            <p>PROCESSOS SELETIVOS</p>
             <hr className="extend"></hr>
             </a>
             <div className={opendropdown ? "dropdown": "dropdown displayFlex"}>
@@ -55,7 +55,7 @@ export default function Header() {
                 </a>
                 <hr></hr>
                 <a href="/faca-parte">
-                    <p>Faça Parte</p>
+                    Faça Parte
                 </a>
                 <hr></hr>
             </div>

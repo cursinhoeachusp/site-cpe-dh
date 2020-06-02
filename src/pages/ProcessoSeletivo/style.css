@@ -82,7 +82,7 @@
 .texto span {
     display: inline-block;
     text-align: center;
-    width: 50%;    
+    width: 80%;    
 }
 
 /*configurando seta para transição*/
@@ -342,6 +342,10 @@ li.botao button{
 }
 
 @media (min-width: 1200px){
+
+    .texto span {
+        width: 50%;    
+    }
 
     .processos-seletivos{
         width: 90%;

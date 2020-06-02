@@ -156,6 +156,7 @@
    
 
     .formularioDeContato {
+        padding-top: 80px;
         align-items: center;
     }
 
@@ -164,11 +165,12 @@
     }
 
     .imagemDeContato {
+        /* padding: 70px 0px !important; */
         /* flex-direction: column; */
         /* justify-content: center; */
         height: 90vh !important;
         width: 90vw;
-        margin-top: 30px;
+        margin-top: 75px;
     }
 
     /*----------------- Itens do Formulário -----------------*/
